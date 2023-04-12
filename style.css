@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+body{
+    background-color: #f3f8fc;
+}
+
+.container{
+    max-width: 80vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    height: 70px; 
+    position: relative;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li{
+    list-style: none;
+    margin: 0 12px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    color:#3292e9; 
+}
+
+.de{
+    position: relative;
+}
+
+.de:after{
+    content:"";
+    position:absolute ;
+    background-color:#183f63 ; 
+    height:3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.de:hover{
+    color:blue;
+}
+
+.de:hover::after{
+    width: 100%;
+
+}
+
+.topleft{
+    width: 50%; 
+}
+
+.topright{ 
+    width: 50%; 
+}
+
+.section1{ 
+    color: #183f63; 
+    font-weight: 700;  
+}
+
+.section1 h1{
+    color: #183f63; 
+    font-size: 2rem; 
+}
+
+.logo{
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 35px; 
+}
+
+.topright .listing{ 
+    width: 400px;
+    margin:60px 40px;
+    height: 500px;
+}
+
+.section2{
+    padding: 40px;
+}
+
+.section2 h1{
+    font-size: 45px;
+    color: #18436b;
+}
+
+.box{ 
+    border: 1.3px solid ;
+    border-radius: 8px;
+    border-color: #18436b;
+    text-align: center;
+    padding: 5px 0;
+    margin: 12px 22px; 
+    min-width: 20vw; 
+}
+
+.box h2{
+    font-size: 40px;
+    padding: 15px 0;
+    color: #18436b;
+}
+
+.highlighted{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.box ul{ 
+    list-style-type:none;
+}
+
+.box ul li{
+    margin: 12px 2px;
+    font-size: larger;
+    color: #18436b;
+    padding: 5
+    px 50px;
+}
+
+footer{
+    padding: 23px;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+}
+
+.email{ 
+    position: relative;
+    margin-top: 15px;
+}
+
+input[type="email"]{
+    border: none;
+    width: 200px;
+    height: 45px;
+    padding: 0 16px;
+}
+
+input[type="email"]:focus{
+    outline:#183f63;
+}
+
+input::placeholder{ 
+font-weight: 700;
+font-size:14px;
+font-family: 'ubuntu';
+}
+
+.start-button{
+    height: 45px;
+    background-color: #3292e9;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 16px; 
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    -webkit-transition-duration:0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: box-shadow,transform ;
+    transition-property: box-shadow,transform;
+}
+
+.start-button:hover, .start-button:focus ,.start-button:active{
+    box-shadow: 0 0 10px rgba(0, 0,0,0.2);
+    -webkit-transform:scale(1.1);
+    transform: scale(1.05);
+}

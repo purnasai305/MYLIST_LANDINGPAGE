@@ -1,0 +1,17 @@
+.tickmark{
+  width: 120px; 
+  height: 100px;
+  margin-bottom: -30px;
+  margin-left: -10px;
+}   
+
+.logo_text{
+  color: #185abe;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: xx-large; 
+  font-weight: 1000;
+} 
+
+.logo{
+  font-family: 'Ubuntu', sans-serif;
+} 
